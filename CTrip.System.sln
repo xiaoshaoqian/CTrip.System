@@ -23,6 +23,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CTrip.System.Core", "CTrip.
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CTrip.System.Interfaces", "CTrip.System.Interfaces\CTrip.System.Interfaces.csproj", "{71C9F087-E7ED-4AC8-AA22-DFFC39206051}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CTrip.System.Model", "CTrip.System.Model\CTrip.System.Model.csproj", "{99424FF8-9D39-41B0-80FD-90629959E325}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -49,6 +51,10 @@ Global
 		{71C9F087-E7ED-4AC8-AA22-DFFC39206051}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{71C9F087-E7ED-4AC8-AA22-DFFC39206051}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{71C9F087-E7ED-4AC8-AA22-DFFC39206051}.Release|Any CPU.Build.0 = Release|Any CPU
+		{99424FF8-9D39-41B0-80FD-90629959E325}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{99424FF8-9D39-41B0-80FD-90629959E325}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{99424FF8-9D39-41B0-80FD-90629959E325}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{99424FF8-9D39-41B0-80FD-90629959E325}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -59,6 +65,7 @@ Global
 		{FC676EBE-A3E4-4B43-B658-CCAC69F99846} = {7BF4524C-ABD6-487D-A3C3-11BA9455584D}
 		{8AF13FF4-B38B-48B5-9C2A-E05F349B8490} = {7BF4524C-ABD6-487D-A3C3-11BA9455584D}
 		{71C9F087-E7ED-4AC8-AA22-DFFC39206051} = {DEE6CBF8-018D-419E-85E6-980DED774660}
+		{99424FF8-9D39-41B0-80FD-90629959E325} = {DEE6CBF8-018D-419E-85E6-980DED774660}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {46420DEC-3A5B-40F3-806B-64B39BC5A08C}
