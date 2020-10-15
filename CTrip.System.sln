@@ -1,0 +1,38 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30523.141
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Common", "Common", "{7BF4524C-ABD6-487D-A3C3-11BA9455584D}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Extensions", "Extensions", "{3F5AF0D3-CC24-41EC-A72E-7E55A6640502}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Interfaces", "Interfaces", "{DEE6CBF8-018D-419E-85E6-980DED774660}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Application", "Application", "{9E2F6AB9-F05C-417A-9A0A-241E899E6173}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tools", "Tools", "{54FFEB9E-16BD-4801-A4A5-116EADD24373}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CTrip.System.Common", "CTrip.System.Common\CTrip.System.Common.csproj", "{3BD4FFC1-C36A-4F1F-A40D-ACFBBFFC4C56}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{3BD4FFC1-C36A-4F1F-A40D-ACFBBFFC4C56}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3BD4FFC1-C36A-4F1F-A40D-ACFBBFFC4C56}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3BD4FFC1-C36A-4F1F-A40D-ACFBBFFC4C56}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3BD4FFC1-C36A-4F1F-A40D-ACFBBFFC4C56}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{3BD4FFC1-C36A-4F1F-A40D-ACFBBFFC4C56} = {7BF4524C-ABD6-487D-A3C3-11BA9455584D}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {46420DEC-3A5B-40F3-806B-64B39BC5A08C}
+	EndGlobalSection
+EndGlobal
