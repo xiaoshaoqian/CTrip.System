@@ -12,6 +12,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\CTrip.System.Common\CTrip.System.Common.csproj" />
+    <ProjectReference Include="..\CTrip.System.Model\CTrip.System.Model.csproj" />
   </ItemGroup>
 
 </Project>
