@@ -11,6 +11,7 @@ namespace CTrip.System.Common.Helpers
         public static IConfiguration Configuration { get; set; }
         static AppSettings()
         {
+            //ReloadOnChange = true 当appsettings.json被修改时重新加载
             Configuration = new ConfigurationBuilder()
                 .Add(new JsonConfigurationSource { Path = "appsettings.json", ReloadOnChange = true })
                 .Build();
