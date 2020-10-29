@@ -56,7 +56,7 @@ namespace CTrip.System.Model.View.System
         public bool keepAlive { get; set; }
     }
 
-    public class MenuListVM : Sys_Menu
+    public class MenuListVM : sys_menu
     {
         [Display(Name = "子菜单")]
         [JsonProperty(NullValueHandling = NullValueHandling.Ignore)]

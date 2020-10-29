@@ -61,6 +61,19 @@ namespace CTrip.System.Core
             return new DbSet<T>(Db);
         }
 
+        public DbSet<sys_datarelation> sysdatarelationDb => new DbSet<sys_datarelation>(Db);
+        public DbSet<sys_log> syslogDb => new DbSet<sys_log>(Db);
+        public DbSet<sys_menu> sysmenuDb => new DbSet<sys_menu>(Db);
+        public DbSet<sys_online> sysonlineDb => new DbSet<sys_online>(Db);
+        public DbSet<sys_options> sysoptionsDb => new DbSet<sys_options>(Db);
+        public DbSet<sys_power> syspowerDb => new DbSet<sys_power>(Db);
+        public DbSet<sys_role> sysroleDb => new DbSet<sys_role>(Db);
+        public DbSet<sys_rolepower> sysrolepowerDb => new DbSet<sys_rolepower>(Db);
+        public DbSet<sys_tasksqz> systasksqzDb => new DbSet<sys_tasksqz>(Db);
+        public DbSet<sys_userrelation> sysuserrelationDb => new DbSet<sys_userrelation>(Db);
+        public DbSet<sys_userrole> sysuserroleDb => new DbSet<sys_userrole>(Db);
+        public DbSet<sys_users> sysusersDb => new DbSet<sys_users>(Db);
+
     }
 
     /// <summary>
