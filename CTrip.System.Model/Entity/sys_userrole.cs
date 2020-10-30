@@ -18,20 +18,20 @@ namespace CTrip.System.Model
     ///<summary>
     ///
     ///</summary>
-    [SugarTable("sys_userrole")]
-    public class sys_userrole
+    [SugarTable("Sys_UserRole")]
+    public class Sys_UserRole
     {
-          public sys_userrole()
+          public Sys_UserRole()
           {
           }
 
            /// <summary>
-           /// 描述 : 用户ID 
+           /// 描述 : 角色ID 
            /// 空值 : True
            /// 默认 : 
            /// <summary>
-           [Display(Name = "用户ID")]           
-           public string UserID {get;set;}
+           [Display(Name = "角色ID")]           
+           public string RoleID {get;set;}
 
            /// <summary>
            /// 描述 : UUID 
@@ -43,12 +43,12 @@ namespace CTrip.System.Model
            public string ID {get;set;}
 
            /// <summary>
-           /// 描述 : 角色ID 
+           /// 描述 : 用户ID 
            /// 空值 : True
            /// 默认 : 
            /// <summary>
-           [Display(Name = "角色ID")]           
-           public string RoleID {get;set;}
+           [Display(Name = "用户ID")]           
+           public string UserID {get;set;}
 
     }
 }

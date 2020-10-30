@@ -18,12 +18,60 @@ namespace CTrip.System.Model
     ///<summary>
     ///
     ///</summary>
-    [SugarTable("sys_options")]
-    public class sys_options
+    [SugarTable("Sys_Options")]
+    public class Sys_Options
     {
-          public sys_options()
+          public Sys_Options()
           {
           }
+
+           /// <summary>
+           /// 描述 : 名称 
+           /// 空值 : True
+           /// 默认 : 
+           /// <summary>
+           [Display(Name = "名称")]           
+           public string Label {get;set;}
+
+           /// <summary>
+           /// 描述 : 更新人编码 
+           /// 空值 : True
+           /// 默认 : 
+           /// <summary>
+           [Display(Name = "更新人编码")]           
+           public string UpdateID {get;set;}
+
+           /// <summary>
+           /// 描述 : 内容 
+           /// 空值 : True
+           /// 默认 : 
+           /// <summary>
+           [Display(Name = "内容")]           
+           public string Value {get;set;}
+
+           /// <summary>
+           /// 描述 : 更新人 
+           /// 空值 : True
+           /// 默认 : 
+           /// <summary>
+           [Display(Name = "更新人")]           
+           public string UpdateName {get;set;}
+
+           /// <summary>
+           /// 描述 : 排序 
+           /// 空值 : True
+           /// 默认 : 
+           /// <summary>
+           [Display(Name = "排序")]           
+           public int? SortIndex {get;set;}
+
+           /// <summary>
+           /// 描述 : 描述 
+           /// 空值 : True
+           /// 默认 : 
+           /// <summary>
+           [Display(Name = "描述")]           
+           public string Remark {get;set;}
 
            /// <summary>
            /// 描述 : 创建时间 
@@ -51,20 +99,12 @@ namespace CTrip.System.Model
            public string ID {get;set;}
 
            /// <summary>
-           /// 描述 : 内容 
+           /// 描述 : 创建人编码 
            /// 空值 : True
            /// 默认 : 
            /// <summary>
-           [Display(Name = "内容")]           
-           public string Value {get;set;}
-
-           /// <summary>
-           /// 描述 : 名称 
-           /// 空值 : True
-           /// 默认 : 
-           /// <summary>
-           [Display(Name = "名称")]           
-           public string Label {get;set;}
+           [Display(Name = "创建人编码")]           
+           public string CreateID {get;set;}
 
            /// <summary>
            /// 描述 : 分组（System_Menus_Status） 
@@ -75,52 +115,12 @@ namespace CTrip.System.Model
            public string Option {get;set;}
 
            /// <summary>
-           /// 描述 : 描述 
-           /// 空值 : True
-           /// 默认 : 
-           /// <summary>
-           [Display(Name = "描述")]           
-           public string Remark {get;set;}
-
-           /// <summary>
-           /// 描述 : 排序 
-           /// 空值 : True
-           /// 默认 : 
-           /// <summary>
-           [Display(Name = "排序")]           
-           public int? SortIndex {get;set;}
-
-           /// <summary>
-           /// 描述 : 创建人编码 
-           /// 空值 : True
-           /// 默认 : 
-           /// <summary>
-           [Display(Name = "创建人编码")]           
-           public string CreateID {get;set;}
-
-           /// <summary>
-           /// 描述 : 更新人编码 
-           /// 空值 : True
-           /// 默认 : 
-           /// <summary>
-           [Display(Name = "更新人编码")]           
-           public string UpdateID {get;set;}
-
-           /// <summary>
            /// 描述 : 创建人 
            /// 空值 : True
            /// 默认 : 
            /// <summary>
            [Display(Name = "创建人")]           
            public string CreateName {get;set;}
-
-           /// <summary>
-           /// 描述 : 更新人 
-           /// 空值 : True
-           /// 默认 : 
-           /// <summary>
-           [Display(Name = "更新人")]           
-           public string UpdateName {get;set;}
 
     }
 }

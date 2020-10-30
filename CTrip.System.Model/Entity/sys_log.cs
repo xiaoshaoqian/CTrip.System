@@ -18,12 +18,52 @@ namespace CTrip.System.Model
     ///<summary>
     ///
     ///</summary>
-    [SugarTable("sys_log")]
-    public class sys_log
+    [SugarTable("Sys_Log")]
+    public class Sys_Log
     {
-          public sys_log()
+          public Sys_Log()
           {
           }
+
+           /// <summary>
+           /// 描述 : 日志等级 
+           /// 空值 : True
+           /// 默认 : 
+           /// <summary>
+           [Display(Name = "日志等级")]           
+           public string Level {get;set;}
+
+           /// <summary>
+           /// 描述 : 日志信息 
+           /// 空值 : True
+           /// 默认 : 
+           /// <summary>
+           [Display(Name = "日志信息")]           
+           public string Message {get;set;}
+
+           /// <summary>
+           /// 描述 : 日志来源 
+           /// 空值 : True
+           /// 默认 : 
+           /// <summary>
+           [Display(Name = "日志来源")]           
+           public string Url {get;set;}
+
+           /// <summary>
+           /// 描述 : 请求耗时 
+           /// 空值 : True
+           /// 默认 : 
+           /// <summary>
+           [Display(Name = "请求耗时")]           
+           public int? Elapsed {get;set;}
+
+           /// <summary>
+           /// 描述 : 主机地址 
+           /// 空值 : True
+           /// 默认 : 
+           /// <summary>
+           [Display(Name = "主机地址")]           
+           public string Host {get;set;}
 
            /// <summary>
            /// 描述 : 创建时间 
@@ -42,36 +82,28 @@ namespace CTrip.System.Model
            public string Method {get;set;}
 
            /// <summary>
-           /// 描述 : 请求耗时 
+           /// 描述 : 用户来源 
            /// 空值 : True
            /// 默认 : 
            /// <summary>
-           [Display(Name = "请求耗时")]           
-           public int? Elapsed {get;set;}
+           [Display(Name = "用户来源")]           
+           public string IPAddress {get;set;}
 
            /// <summary>
-           /// 描述 : URL参数 
+           /// 描述 : 浏览器标识 
            /// 空值 : True
            /// 默认 : 
            /// <summary>
-           [Display(Name = "URL参数")]           
-           public string QueryString {get;set;}
+           [Display(Name = "浏览器标识")]           
+           public string UserAgent {get;set;}
 
            /// <summary>
-           /// 描述 : 主机地址 
+           /// 描述 : Cookie 
            /// 空值 : True
            /// 默认 : 
            /// <summary>
-           [Display(Name = "主机地址")]           
-           public string Host {get;set;}
-
-           /// <summary>
-           /// 描述 : 日志来源 
-           /// 空值 : True
-           /// 默认 : 
-           /// <summary>
-           [Display(Name = "日志来源")]           
-           public string Url {get;set;}
+           [Display(Name = "Cookie")]           
+           public string Cookie {get;set;}
 
            /// <summary>
            /// 描述 : ID 
@@ -83,36 +115,12 @@ namespace CTrip.System.Model
            public string ID {get;set;}
 
            /// <summary>
-           /// 描述 : 浏览器标识 
+           /// 描述 : URL参数 
            /// 空值 : True
            /// 默认 : 
            /// <summary>
-           [Display(Name = "浏览器标识")]           
-           public string UserAgent {get;set;}
-
-           /// <summary>
-           /// 描述 : 用户来源 
-           /// 空值 : True
-           /// 默认 : 
-           /// <summary>
-           [Display(Name = "用户来源")]           
-           public string IPAddress {get;set;}
-
-           /// <summary>
-           /// 描述 : 日志等级 
-           /// 空值 : True
-           /// 默认 : 
-           /// <summary>
-           [Display(Name = "日志等级")]           
-           public string Level {get;set;}
-
-           /// <summary>
-           /// 描述 : 请求内容 
-           /// 空值 : True
-           /// 默认 : 
-           /// <summary>
-           [Display(Name = "请求内容")]           
-           public string Body {get;set;}
+           [Display(Name = "URL参数")]           
+           public string QueryString {get;set;}
 
            /// <summary>
            /// 描述 : 日志类型 
@@ -123,20 +131,12 @@ namespace CTrip.System.Model
            public string Logger {get;set;}
 
            /// <summary>
-           /// 描述 : Cookie 
+           /// 描述 : 请求内容 
            /// 空值 : True
            /// 默认 : 
            /// <summary>
-           [Display(Name = "Cookie")]           
-           public string Cookie {get;set;}
-
-           /// <summary>
-           /// 描述 : 日志信息 
-           /// 空值 : True
-           /// 默认 : 
-           /// <summary>
-           [Display(Name = "日志信息")]           
-           public string Message {get;set;}
+           [Display(Name = "请求内容")]           
+           public string Body {get;set;}
 
     }
 }

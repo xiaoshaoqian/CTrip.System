@@ -18,44 +18,36 @@ namespace CTrip.System.Model
     ///<summary>
     ///
     ///</summary>
-    [SugarTable("sys_menu")]
-    public class sys_menu
+    [SugarTable("Sys_Menu")]
+    public class Sys_Menu
     {
-          public sys_menu()
+          public Sys_Menu()
           {
           }
 
            /// <summary>
-           /// 描述 : 创建人 
+           /// 描述 : 图标 
            /// 空值 : True
            /// 默认 : 
            /// <summary>
-           [Display(Name = "创建人")]           
-           public string CreateName {get;set;}
+           [Display(Name = "图标")]           
+           public string Icon {get;set;}
 
            /// <summary>
-           /// 描述 : 上级菜单 
+           /// 描述 : 是否外链 
            /// 空值 : True
            /// 默认 : 
            /// <summary>
-           [Display(Name = "上级菜单")]           
-           public string ParentUID {get;set;}
+           [Display(Name = "是否外链")]           
+           public byte? isFrame {get;set;}
 
            /// <summary>
-           /// 描述 : 浏览权限 
+           /// 描述 : 更新人 
            /// 空值 : True
            /// 默认 : 
            /// <summary>
-           [Display(Name = "浏览权限")]           
-           public string ViewPower {get;set;}
-
-           /// <summary>
-           /// 描述 : 创建时间 
-           /// 空值 : True
-           /// 默认 : 
-           /// <summary>
-           [Display(Name = "创建时间")]           
-           public DateTime? CreateTime {get;set;}
+           [Display(Name = "更新人")]           
+           public DateTime? UpdateName {get;set;}
 
            /// <summary>
            /// 描述 : 路由地址 
@@ -74,63 +66,6 @@ namespace CTrip.System.Model
            public byte? Hidden {get;set;}
 
            /// <summary>
-           /// 描述 : 备注 
-           /// 空值 : True
-           /// 默认 : 
-           /// <summary>
-           [Display(Name = "备注")]           
-           public string Remark {get;set;}
-
-           /// <summary>
-           /// 描述 : 图标 
-           /// 空值 : True
-           /// 默认 : 
-           /// <summary>
-           [Display(Name = "图标")]           
-           public string Icon {get;set;}
-
-           /// <summary>
-           /// 描述 : 默认排序 
-           /// 空值 : True
-           /// 默认 : 
-           /// <summary>
-           [Display(Name = "默认排序")]           
-           public int? SortIndex {get;set;}
-
-           /// <summary>
-           /// 描述 : UUID 
-           /// 空值 : False
-           /// 默认 : 
-           /// <summary>
-           [Display(Name = "UUID")]           
-           [SugarColumn(IsPrimaryKey=true)]
-           public string ID {get;set;}
-
-           /// <summary>
-           /// 描述 : Name = "可用系统(0-PC，1-Wx)") 
-           /// 空值 : True
-           /// 默认 : 
-           /// <summary>
-           [Display(Name = "Name = "可用系统(0-PC，1-Wx)")")]           
-           public int? System {get;set;}
-
-           /// <summary>
-           /// 描述 : 是否外链 
-           /// 空值 : True
-           /// 默认 : 
-           /// <summary>
-           [Display(Name = "是否外链")]           
-           public byte? isFrame {get;set;}
-
-           /// <summary>
-           /// 描述 : 更新人编码 
-           /// 空值 : True
-           /// 默认 : 
-           /// <summary>
-           [Display(Name = "更新人编码")]           
-           public string UpdateID {get;set;}
-
-           /// <summary>
            /// 描述 : 组件路径 
            /// 空值 : True
            /// 默认 : 
@@ -147,12 +82,44 @@ namespace CTrip.System.Model
            public byte? KeepAlive {get;set;}
 
            /// <summary>
-           /// 描述 : 更新人 
+           /// 描述 : 默认排序 
            /// 空值 : True
            /// 默认 : 
            /// <summary>
-           [Display(Name = "更新人")]           
-           public DateTime? UpdateName {get;set;}
+           [Display(Name = "默认排序")]           
+           public int? SortIndex {get;set;}
+
+           /// <summary>
+           /// 描述 : 创建时间 
+           /// 空值 : True
+           /// 默认 : 
+           /// <summary>
+           [Display(Name = "创建时间")]           
+           public DateTime? CreateTime {get;set;}
+
+           /// <summary>
+           /// 描述 : 浏览权限 
+           /// 空值 : True
+           /// 默认 : 
+           /// <summary>
+           [Display(Name = "浏览权限")]           
+           public string ViewPower {get;set;}
+
+           /// <summary>
+           /// 描述 : 最后更新时间 
+           /// 空值 : True
+           /// 默认 : 
+           /// <summary>
+           [Display(Name = "最后更新时间")]           
+           public DateTime? UpdateTime {get;set;}
+
+           /// <summary>
+           /// 描述 : 上级菜单 
+           /// 空值 : True
+           /// 默认 : 
+           /// <summary>
+           [Display(Name = "上级菜单")]           
+           public string ParentUID {get;set;}
 
            /// <summary>
            /// 描述 : 创建人编码 
@@ -163,6 +130,31 @@ namespace CTrip.System.Model
            public string CreateID {get;set;}
 
            /// <summary>
+           /// 描述 : UUID 
+           /// 空值 : False
+           /// 默认 : 
+           /// <summary>
+           [Display(Name = "UUID")]           
+           [SugarColumn(IsPrimaryKey=true)]
+           public string ID {get;set;}
+
+           /// <summary>
+           /// 描述 : 备注 
+           /// 空值 : True
+           /// 默认 : 
+           /// <summary>
+           [Display(Name = "备注")]           
+           public string Remark {get;set;}
+
+           /// <summary>
+           /// 描述 : 创建人 
+           /// 空值 : True
+           /// 默认 : 
+           /// <summary>
+           [Display(Name = "创建人")]           
+           public string CreateName {get;set;}
+
+           /// <summary>
            /// 描述 : 菜单名称 
            /// 空值 : True
            /// 默认 : 
@@ -171,12 +163,20 @@ namespace CTrip.System.Model
            public string Name {get;set;}
 
            /// <summary>
-           /// 描述 : 最后更新时间 
+           /// 描述 : Name = "可用系统(0-PC，1-Wx)") 
            /// 空值 : True
            /// 默认 : 
            /// <summary>
-           [Display(Name = "最后更新时间")]           
-           public DateTime? UpdateTime {get;set;}
+           [Display(Name = "可用系统(0-PC，1-Wx)")]           
+           public int? System {get;set;}
+
+           /// <summary>
+           /// 描述 : 更新人编码 
+           /// 空值 : True
+           /// 默认 : 
+           /// <summary>
+           [Display(Name = "更新人编码")]           
+           public string UpdateID {get;set;}
 
     }
 }

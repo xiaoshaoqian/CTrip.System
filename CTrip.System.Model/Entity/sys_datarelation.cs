@@ -18,10 +18,10 @@ namespace CTrip.System.Model
     ///<summary>
     ///
     ///</summary>
-    [SugarTable("sys_datarelation")]
-    public class sys_datarelation
+    [SugarTable("Sys_DataRelation")]
+    public class Sys_DataRelation
     {
-          public sys_datarelation()
+          public Sys_DataRelation()
           {
           }
 
@@ -42,14 +42,6 @@ namespace CTrip.System.Model
            public string Type {get;set;}
 
            /// <summary>
-           /// 描述 : 来源ID 
-           /// 空值 : True
-           /// 默认 : 
-           /// <summary>
-           [Display(Name = "来源ID")]           
-           public string From {get;set;}
-
-           /// <summary>
            /// 描述 : UID 
            /// 空值 : False
            /// 默认 : 
@@ -57,6 +49,14 @@ namespace CTrip.System.Model
            [Display(Name = "UID")]           
            [SugarColumn(IsPrimaryKey=true)]
            public string ID {get;set;}
+
+           /// <summary>
+           /// 描述 : 来源ID 
+           /// 空值 : True
+           /// 默认 : 
+           /// <summary>
+           [Display(Name = "来源ID")]           
+           public string From {get;set;}
 
     }
 }

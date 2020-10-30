@@ -18,28 +18,20 @@ namespace CTrip.System.Model
     ///<summary>
     ///
     ///</summary>
-    [SugarTable("sys_users")]
-    public class sys_users
+    [SugarTable("Sys_Users")]
+    public class Sys_Users
     {
-          public sys_users()
+          public Sys_Users()
           {
           }
 
            /// <summary>
-           /// 描述 : 生日 
+           /// 描述 : 用户昵称 
            /// 空值 : True
            /// 默认 : 
            /// <summary>
-           [Display(Name = "生日")]           
-           public string Birthday {get;set;}
-
-           /// <summary>
-           /// 描述 : 邮箱 
-           /// 空值 : True
-           /// 默认 : 
-           /// <summary>
-           [Display(Name = "邮箱")]           
-           public string Email {get;set;}
+           [Display(Name = "用户昵称")]           
+           public string NickName {get;set;}
 
            /// <summary>
            /// 描述 : 用户所在省份 
@@ -50,13 +42,60 @@ namespace CTrip.System.Model
            public string Province {get;set;}
 
            /// <summary>
-           /// 描述 : 用户账号 
-           /// 空值 : False
+           /// 描述 : 生日 
+           /// 空值 : True
            /// 默认 : 
            /// <summary>
-           [Display(Name = "用户账号")]           
-           [SugarColumn(IsPrimaryKey=true)]
-           public string UserID {get;set;}
+           [Display(Name = "生日")]           
+           public string Birthday {get;set;}
+
+           /// <summary>
+           /// 描述 : 更新人编码 
+           /// 空值 : True
+           /// 默认 : 
+           /// <summary>
+           [Display(Name = "更新人编码")]           
+           public string UpdateID {get;set;}
+
+           /// <summary>
+           /// 描述 : 邮箱 
+           /// 空值 : True
+           /// 默认 : 
+           /// <summary>
+           [Display(Name = "邮箱")]           
+           public string Email {get;set;}
+
+           /// <summary>
+           /// 描述 : 用户所在城市编码 
+           /// 空值 : True
+           /// 默认 : 
+           /// <summary>
+           [Display(Name = "用户所在城市编码")]           
+           public string CityID {get;set;}
+
+           /// <summary>
+           /// 描述 : 上次登录时间 
+           /// 空值 : True
+           /// 默认 : 
+           /// <summary>
+           [Display(Name = "上次登录时间")]           
+           public DateTime? LastLoginTime {get;set;}
+
+           /// <summary>
+           /// 描述 : 更新人 
+           /// 空值 : True
+           /// 默认 : 
+           /// <summary>
+           [Display(Name = "更新人")]           
+           public DateTime? UpdateName {get;set;}
+
+           /// <summary>
+           /// 描述 : 密码 
+           /// 空值 : True
+           /// 默认 : 
+           /// <summary>
+           [Display(Name = "密码")]           
+           public string Password {get;set;}
 
            /// <summary>
            /// 描述 : 用户所在城市 
@@ -75,68 +114,12 @@ namespace CTrip.System.Model
            public string Enabled {get;set;}
 
            /// <summary>
-           /// 描述 : 用户所在省份编码 
+           /// 描述 : 性别 
            /// 空值 : True
            /// 默认 : 
            /// <summary>
-           [Display(Name = "用户所在省份编码")]           
-           public string ProvinceID {get;set;}
-
-           /// <summary>
-           /// 描述 : 用户名称 
-           /// 空值 : True
-           /// 默认 : 
-           /// <summary>
-           [Display(Name = "用户名称")]           
-           public string UserName {get;set;}
-
-           /// <summary>
-           /// 描述 : 用户所在城市编码 
-           /// 空值 : True
-           /// 默认 : 
-           /// <summary>
-           [Display(Name = "用户所在城市编码")]           
-           public string CityID {get;set;}
-
-           /// <summary>
-           /// 描述 : 身份证 
-           /// 空值 : True
-           /// 默认 : 
-           /// <summary>
-           [Display(Name = "身份证")]           
-           public string IdentityCard {get;set;}
-
-           /// <summary>
-           /// 描述 : QQ 
-           /// 空值 : True
-           /// 默认 : 
-           /// <summary>
-           [Display(Name = "QQ")]           
-           public string QQ {get;set;}
-
-           /// <summary>
-           /// 描述 : 用户所在县/区 
-           /// 空值 : True
-           /// 默认 : 
-           /// <summary>
-           [Display(Name = "用户所在县/区")]           
-           public string County {get;set;}
-
-           /// <summary>
-           /// 描述 : 上次登录时间 
-           /// 空值 : True
-           /// 默认 : 
-           /// <summary>
-           [Display(Name = "上次登录时间")]           
-           public DateTime? LastLoginTime {get;set;}
-
-           /// <summary>
-           /// 描述 : 备注 
-           /// 空值 : True
-           /// 默认 : 
-           /// <summary>
-           [Display(Name = "备注")]           
-           public string Remark {get;set;}
+           [Display(Name = "性别")]           
+           public string Sex {get;set;}
 
            /// <summary>
            /// 描述 : 用户所在县/区编码 
@@ -147,76 +130,12 @@ namespace CTrip.System.Model
            public string CountyID {get;set;}
 
            /// <summary>
-           /// 描述 : 用户昵称 
-           /// 空值 : True
-           /// 默认 : 
-           /// <summary>
-           [Display(Name = "用户昵称")]           
-           public string NickName {get;set;}
-
-           /// <summary>
-           /// 描述 : 性别 
-           /// 空值 : True
-           /// 默认 : 
-           /// <summary>
-           [Display(Name = "性别")]           
-           public string Sex {get;set;}
-
-           /// <summary>
-           /// 描述 : 创建人编码 
-           /// 空值 : True
-           /// 默认 : 
-           /// <summary>
-           [Display(Name = "创建人编码")]           
-           public string CreateID {get;set;}
-
-           /// <summary>
            /// 描述 : 单用户模式 
            /// 空值 : True
            /// 默认 : 
            /// <summary>
            [Display(Name = "单用户模式")]           
            public string OneSession {get;set;}
-
-           /// <summary>
-           /// 描述 : 更新人编码 
-           /// 空值 : True
-           /// 默认 : 
-           /// <summary>
-           [Display(Name = "更新人编码")]           
-           public string UpdateID {get;set;}
-
-           /// <summary>
-           /// 描述 : 地址 
-           /// 空值 : True
-           /// 默认 : 
-           /// <summary>
-           [Display(Name = "地址")]           
-           public string Address {get;set;}
-
-           /// <summary>
-           /// 描述 : 创建人 
-           /// 空值 : True
-           /// 默认 : 
-           /// <summary>
-           [Display(Name = "创建人")]           
-           public string CreateName {get;set;}
-
-           /// <summary>
-           /// 描述 : 密码 
-           /// 空值 : True
-           /// 默认 : 
-           /// <summary>
-           [Display(Name = "密码")]           
-           public string Password {get;set;}
-
-           /// <summary>
-           /// 描述 : 更新人 
-           /// 空值 : True
-           /// 默认 : 
-           /// <summary>
-           [Display(Name = "更新人")]           
-           public DateTime? UpdateName {get;set;}
 
            /// <summary>
            /// 描述 : 头像地址 
@@ -227,12 +146,53 @@ namespace CTrip.System.Model
            public string AvatarUrl {get;set;}
 
            /// <summary>
+           /// 描述 : 用户所在县/区 
+           /// 空值 : True
+           /// 默认 : 
+           /// <summary>
+           [Display(Name = "用户所在县/区")]           
+           public string County {get;set;}
+
+           /// <summary>
            /// 描述 : 创建时间 
            /// 空值 : True
            /// 默认 : 
            /// <summary>
            [Display(Name = "创建时间")]           
            public DateTime? CreateTime {get;set;}
+
+           /// <summary>
+           /// 描述 : QQ 
+           /// 空值 : True
+           /// 默认 : 
+           /// <summary>
+           [Display(Name = "QQ")]           
+           public string QQ {get;set;}
+
+           /// <summary>
+           /// 描述 : 地址 
+           /// 空值 : True
+           /// 默认 : 
+           /// <summary>
+           [Display(Name = "地址")]           
+           public string Address {get;set;}
+
+           /// <summary>
+           /// 描述 : 最后更新时间 
+           /// 空值 : True
+           /// 默认 : 
+           /// <summary>
+           [Display(Name = "最后更新时间")]           
+           public DateTime? UpdateTime {get;set;}
+
+           /// <summary>
+           /// 描述 : 用户账号 
+           /// 空值 : False
+           /// 默认 : 
+           /// <summary>
+           [Display(Name = "用户账号")]           
+           [SugarColumn(IsPrimaryKey=true)]
+           public string UserID {get;set;}
 
            /// <summary>
            /// 描述 : 手机号码 
@@ -243,12 +203,52 @@ namespace CTrip.System.Model
            public string Phone {get;set;}
 
            /// <summary>
-           /// 描述 : 最后更新时间 
+           /// 描述 : 备注 
            /// 空值 : True
            /// 默认 : 
            /// <summary>
-           [Display(Name = "最后更新时间")]           
-           public DateTime? UpdateTime {get;set;}
+           [Display(Name = "备注")]           
+           public string Remark {get;set;}
+
+           /// <summary>
+           /// 描述 : 创建人编码 
+           /// 空值 : True
+           /// 默认 : 
+           /// <summary>
+           [Display(Name = "创建人编码")]           
+           public string CreateID {get;set;}
+
+           /// <summary>
+           /// 描述 : 用户名称 
+           /// 空值 : True
+           /// 默认 : 
+           /// <summary>
+           [Display(Name = "用户名称")]           
+           public string UserName {get;set;}
+
+           /// <summary>
+           /// 描述 : 用户所在省份编码 
+           /// 空值 : True
+           /// 默认 : 
+           /// <summary>
+           [Display(Name = "用户所在省份编码")]           
+           public string ProvinceID {get;set;}
+
+           /// <summary>
+           /// 描述 : 身份证 
+           /// 空值 : True
+           /// 默认 : 
+           /// <summary>
+           [Display(Name = "身份证")]           
+           public string IdentityCard {get;set;}
+
+           /// <summary>
+           /// 描述 : 创建人 
+           /// 空值 : True
+           /// 默认 : 
+           /// <summary>
+           [Display(Name = "创建人")]           
+           public string CreateName {get;set;}
 
     }
 }

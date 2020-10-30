@@ -18,12 +18,44 @@ namespace CTrip.System.Model
     ///<summary>
     ///
     ///</summary>
-    [SugarTable("sys_power")]
-    public class sys_power
+    [SugarTable("Sys_Power")]
+    public class Sys_Power
     {
-          public sys_power()
+          public Sys_Power()
           {
           }
+
+           /// <summary>
+           /// 描述 : 系统页面 
+           /// 空值 : True
+           /// 默认 : 
+           /// <summary>
+           [Display(Name = "系统页面")]           
+           public string Page {get;set;}
+
+           /// <summary>
+           /// 描述 : 更新人 
+           /// 空值 : True
+           /// 默认 : 
+           /// <summary>
+           [Display(Name = "更新人")]           
+           public DateTime? UpdateName {get;set;}
+
+           /// <summary>
+           /// 描述 : 权限描述 
+           /// 空值 : True
+           /// 默认 : 
+           /// <summary>
+           [Display(Name = "权限描述")]           
+           public string Description {get;set;}
+
+           /// <summary>
+           /// 描述 : 备注 
+           /// 空值 : True
+           /// 默认 : 
+           /// <summary>
+           [Display(Name = "备注")]           
+           public string Remark {get;set;}
 
            /// <summary>
            /// 描述 : 创建时间 
@@ -42,12 +74,12 @@ namespace CTrip.System.Model
            public DateTime? UpdateTime {get;set;}
 
            /// <summary>
-           /// 描述 : 权限描述 
+           /// 描述 : 创建人编码 
            /// 空值 : True
            /// 默认 : 
            /// <summary>
-           [Display(Name = "权限描述")]           
-           public string Description {get;set;}
+           [Display(Name = "创建人编码")]           
+           public string CreateID {get;set;}
 
            /// <summary>
            /// 描述 : UUID 
@@ -59,46 +91,6 @@ namespace CTrip.System.Model
            public string ID {get;set;}
 
            /// <summary>
-           /// 描述 : 权限标识 
-           /// 空值 : True
-           /// 默认 : 
-           /// <summary>
-           [Display(Name = "权限标识")]           
-           public string Name {get;set;}
-
-           /// <summary>
-           /// 描述 : 系统页面 
-           /// 空值 : True
-           /// 默认 : 
-           /// <summary>
-           [Display(Name = "系统页面")]           
-           public string Page {get;set;}
-
-           /// <summary>
-           /// 描述 : 备注 
-           /// 空值 : True
-           /// 默认 : 
-           /// <summary>
-           [Display(Name = "备注")]           
-           public string Remark {get;set;}
-
-           /// <summary>
-           /// 描述 : 创建人编码 
-           /// 空值 : True
-           /// 默认 : 
-           /// <summary>
-           [Display(Name = "创建人编码")]           
-           public string CreateID {get;set;}
-
-           /// <summary>
-           /// 描述 : 更新人编码 
-           /// 空值 : True
-           /// 默认 : 
-           /// <summary>
-           [Display(Name = "更新人编码")]           
-           public string UpdateID {get;set;}
-
-           /// <summary>
            /// 描述 : 创建人 
            /// 空值 : True
            /// 默认 : 
@@ -107,12 +99,20 @@ namespace CTrip.System.Model
            public string CreateName {get;set;}
 
            /// <summary>
-           /// 描述 : 更新人 
+           /// 描述 : 权限标识 
            /// 空值 : True
            /// 默认 : 
            /// <summary>
-           [Display(Name = "更新人")]           
-           public DateTime? UpdateName {get;set;}
+           [Display(Name = "权限标识")]           
+           public string Name {get;set;}
+
+           /// <summary>
+           /// 描述 : 更新人编码 
+           /// 空值 : True
+           /// 默认 : 
+           /// <summary>
+           [Display(Name = "更新人编码")]           
+           public string UpdateID {get;set;}
 
     }
 }

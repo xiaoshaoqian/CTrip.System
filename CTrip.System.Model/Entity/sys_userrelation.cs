@@ -18,12 +18,20 @@ namespace CTrip.System.Model
     ///<summary>
     ///
     ///</summary>
-    [SugarTable("sys_userrelation")]
-    public class sys_userrelation
+    [SugarTable("Sys_UserRelation")]
+    public class Sys_UserRelation
     {
-          public sys_userrelation()
+          public Sys_UserRelation()
           {
           }
+
+           /// <summary>
+           /// 描述 : 数据权限ID 
+           /// 空值 : True
+           /// 默认 : 
+           /// <summary>
+           [Display(Name = "数据权限ID")]           
+           public string ObjectID {get;set;}
 
            /// <summary>
            /// 描述 : 数据权限类型 
@@ -32,14 +40,6 @@ namespace CTrip.System.Model
            /// <summary>
            [Display(Name = "数据权限类型")]           
            public string ObjectType {get;set;}
-
-           /// <summary>
-           /// 描述 : 用户ID 
-           /// 空值 : True
-           /// 默认 : 
-           /// <summary>
-           [Display(Name = "用户ID")]           
-           public string UserID {get;set;}
 
            /// <summary>
            /// 描述 : UUID 
@@ -51,12 +51,12 @@ namespace CTrip.System.Model
            public string ID {get;set;}
 
            /// <summary>
-           /// 描述 : 数据权限ID 
+           /// 描述 : 用户ID 
            /// 空值 : True
            /// 默认 : 
            /// <summary>
-           [Display(Name = "数据权限ID")]           
-           public string ObjectID {get;set;}
+           [Display(Name = "用户ID")]           
+           public string UserID {get;set;}
 
     }
 }

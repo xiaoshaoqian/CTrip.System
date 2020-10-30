@@ -18,45 +18,12 @@ namespace CTrip.System.Model
     ///<summary>
     ///
     ///</summary>
-    [SugarTable("sys_online")]
-    public class sys_online
+    [SugarTable("Sys_Online")]
+    public class Sys_Online
     {
-          public sys_online()
+          public Sys_Online()
           {
           }
-
-           /// <summary>
-           /// 描述 : 会话 
-           /// 空值 : True
-           /// 默认 : 
-           /// <summary>
-           [Display(Name = "会话")]           
-           public string SessionID {get;set;}
-
-           /// <summary>
-           /// 描述 : 来源 
-           /// 空值 : True
-           /// 默认 : 
-           /// <summary>
-           [Display(Name = "来源")]           
-           public string Source {get;set;}
-
-           /// <summary>
-           /// 描述 : 最后操作时间 
-           /// 空值 : True
-           /// 默认 : 
-           /// <summary>
-           [Display(Name = "最后操作时间")]           
-           public DateTime? UpdateTime {get;set;}
-
-           /// <summary>
-           /// 描述 : 用户 
-           /// 空值 : False
-           /// 默认 : 
-           /// <summary>
-           [Display(Name = "用户")]           
-           [SugarColumn(IsPrimaryKey=true)]
-           public string UserID {get;set;}
 
            /// <summary>
            /// 描述 : IP地址 
@@ -73,6 +40,39 @@ namespace CTrip.System.Model
            /// <summary>
            [Display(Name = "登录时间")]           
            public DateTime? LoginTime {get;set;}
+
+           /// <summary>
+           /// 描述 : 最后操作时间 
+           /// 空值 : True
+           /// 默认 : 
+           /// <summary>
+           [Display(Name = "最后操作时间")]           
+           public DateTime? UpdateTime {get;set;}
+
+           /// <summary>
+           /// 描述 : 来源 
+           /// 空值 : True
+           /// 默认 : 
+           /// <summary>
+           [Display(Name = "来源")]           
+           public string Source {get;set;}
+
+           /// <summary>
+           /// 描述 : 用户 
+           /// 空值 : False
+           /// 默认 : 
+           /// <summary>
+           [Display(Name = "用户")]           
+           [SugarColumn(IsPrimaryKey=true)]
+           public string UserID {get;set;}
+
+           /// <summary>
+           /// 描述 : 会话 
+           /// 空值 : True
+           /// 默认 : 
+           /// <summary>
+           [Display(Name = "会话")]           
+           public string SessionID {get;set;}
 
     }
 }

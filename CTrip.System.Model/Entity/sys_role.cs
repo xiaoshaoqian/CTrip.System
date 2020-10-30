@@ -18,12 +18,20 @@ namespace CTrip.System.Model
     ///<summary>
     ///
     ///</summary>
-    [SugarTable("sys_role")]
-    public class sys_role
+    [SugarTable("Sys_Role")]
+    public class Sys_Role
     {
-          public sys_role()
+          public Sys_Role()
           {
           }
+
+           /// <summary>
+           /// 描述 : 备注 
+           /// 空值 : True
+           /// 默认 : 
+           /// <summary>
+           [Display(Name = "备注")]           
+           public string Remark {get;set;}
 
            /// <summary>
            /// 描述 : 创建时间 
@@ -32,6 +40,38 @@ namespace CTrip.System.Model
            /// <summary>
            [Display(Name = "创建时间")]           
            public DateTime? CreateTime {get;set;}
+
+           /// <summary>
+           /// 描述 : 最后更新时间 
+           /// 空值 : True
+           /// 默认 : 
+           /// <summary>
+           [Display(Name = "最后更新时间")]           
+           public DateTime? UpdateTime {get;set;}
+
+           /// <summary>
+           /// 描述 : 创建人编码 
+           /// 空值 : True
+           /// 默认 : 
+           /// <summary>
+           [Display(Name = "创建人编码")]           
+           public string CreateID {get;set;}
+
+           /// <summary>
+           /// 描述 : 创建人 
+           /// 空值 : True
+           /// 默认 : 
+           /// <summary>
+           [Display(Name = "创建人")]           
+           public string CreateName {get;set;}
+
+           /// <summary>
+           /// 描述 : 更新人编码 
+           /// 空值 : True
+           /// 默认 : 
+           /// <summary>
+           [Display(Name = "更新人编码")]           
+           public string UpdateID {get;set;}
 
            /// <summary>
            /// 描述 : ID 
@@ -43,30 +83,6 @@ namespace CTrip.System.Model
            public string ID {get;set;}
 
            /// <summary>
-           /// 描述 : 角色名称 
-           /// 空值 : True
-           /// 默认 : 
-           /// <summary>
-           [Display(Name = "角色名称")]           
-           public string Name {get;set;}
-
-           /// <summary>
-           /// 描述 : 备注 
-           /// 空值 : True
-           /// 默认 : 
-           /// <summary>
-           [Display(Name = "备注")]           
-           public string Remark {get;set;}
-
-           /// <summary>
-           /// 描述 : 更新人编码 
-           /// 空值 : True
-           /// 默认 : 
-           /// <summary>
-           [Display(Name = "更新人编码")]           
-           public string UpdateID {get;set;}
-
-           /// <summary>
            /// 描述 : 更新人 
            /// 空值 : True
            /// 默认 : 
@@ -75,28 +91,12 @@ namespace CTrip.System.Model
            public string UpdateName {get;set;}
 
            /// <summary>
-           /// 描述 : 创建人编码 
+           /// 描述 : 角色名称 
            /// 空值 : True
            /// 默认 : 
            /// <summary>
-           [Display(Name = "创建人编码")]           
-           public string CreateID {get;set;}
-
-           /// <summary>
-           /// 描述 : 最后更新时间 
-           /// 空值 : True
-           /// 默认 : 
-           /// <summary>
-           [Display(Name = "最后更新时间")]           
-           public DateTime? UpdateTime {get;set;}
-
-           /// <summary>
-           /// 描述 : 创建人 
-           /// 空值 : True
-           /// 默认 : 
-           /// <summary>
-           [Display(Name = "创建人")]           
-           public string CreateName {get;set;}
+           [Display(Name = "角色名称")]           
+           public string Name {get;set;}
 
     }
 }

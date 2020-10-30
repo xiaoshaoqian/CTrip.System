@@ -1,5 +1,6 @@
 ﻿using CTrip.System.Model;
 using CTrip.System.Model.Api;
+using CTrip.System.Model.View.System;
 using Microsoft.AspNetCore.Mvc;
 using System;
 using System.Collections.Generic;
@@ -47,9 +48,9 @@ namespace CTrip.System.Hostd.Controllers
         #endregion
 
         #region 生成菜单树
-        //public static List<UserMenusVM> ResolveUserMenuTree(List<Sys_Menu> menus,string parenId = null)
+        //public static List<UserMenusVM> ResolveUserMenuTree(List<Sys_Menu> menus, string parenId = null)
         //{
-            
+
         //}
         #endregion
     }
