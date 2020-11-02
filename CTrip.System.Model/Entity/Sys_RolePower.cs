@@ -18,45 +18,37 @@ namespace CTrip.System.Model
     ///<summary>
     ///
     ///</summary>
-    [SugarTable("Sys_DataRelation")]
-    public class Sys_DataRelation
+    [SugarTable("Sys_RolePower")]
+    public class Sys_RolePower
     {
-          public Sys_DataRelation()
+          public Sys_RolePower()
           {
           }
 
            /// <summary>
-           /// 描述 : 对应ID 
+           /// 描述 : 权限ID 
            /// 空值 : True
            /// 默认 : 
            /// <summary>
-           [Display(Name = "对应ID")]           
-           public string To {get;set;}
+           [Display(Name = "权限ID")]           
+           public string PowerUID {get;set;}
 
            /// <summary>
-           /// 描述 :  
-           /// 空值 : True
-           /// 默认 : 
-           /// <summary>
-           [Display(Name = "")]           
-           public string Type {get;set;}
-
-           /// <summary>
-           /// 描述 : UID 
+           /// 描述 : UUID 
            /// 空值 : False
            /// 默认 : 
            /// <summary>
-           [Display(Name = "UID")]           
+           [Display(Name = "UUID")]           
            [SugarColumn(IsPrimaryKey=true)]
            public string ID {get;set;}
 
            /// <summary>
-           /// 描述 : 来源ID 
+           /// 描述 : 角色ID 
            /// 空值 : True
            /// 默认 : 
            /// <summary>
-           [Display(Name = "来源ID")]           
-           public string From {get;set;}
+           [Display(Name = "角色ID")]           
+           public string RoleUID {get;set;}
 
     }
 }
