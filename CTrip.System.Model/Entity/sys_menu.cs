@@ -63,7 +63,7 @@ namespace CTrip.System.Model
            /// 默认 : 
            /// <summary>
            [Display(Name = "是否可见")]           
-           public byte? Hidden {get;set;}
+           public bool Hidden {get;set;}
 
            /// <summary>
            /// 描述 : 组件路径 
@@ -79,7 +79,7 @@ namespace CTrip.System.Model
            /// 默认 : 
            /// <summary>
            [Display(Name = "是否缓存")]           
-           public byte? KeepAlive {get;set;}
+           public bool KeepAlive {get;set;}
 
            /// <summary>
            /// 描述 : 默认排序 

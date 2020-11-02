@@ -47,7 +47,7 @@ namespace CTrip.System.Model
            /// 默认 : 
            /// <summary>
            [Display(Name = "生日")]           
-           public string Birthday {get;set;}
+           public DateTime? Birthday {get;set;}
 
            /// <summary>
            /// 描述 : 更新人编码 
@@ -111,7 +111,7 @@ namespace CTrip.System.Model
            /// 默认 : 
            /// <summary>
            [Display(Name = "是否启用")]           
-           public string Enabled {get;set;}
+           public bool Enabled {get;set;}
 
            /// <summary>
            /// 描述 : 性别 
@@ -135,7 +135,7 @@ namespace CTrip.System.Model
            /// 默认 : 
            /// <summary>
            [Display(Name = "单用户模式")]           
-           public string OneSession {get;set;}
+           public bool OneSession {get;set;}
 
            /// <summary>
            /// 描述 : 头像地址 
