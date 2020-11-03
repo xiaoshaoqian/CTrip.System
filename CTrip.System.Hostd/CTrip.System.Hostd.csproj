@@ -5,10 +5,26 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <PackageReference Include="Autofac.Extensions.DependencyInjection" Version="7.1.0" />
+    <PackageReference Include="Autofac.Extras.DynamicProxy" Version="6.0.0" />
+    <PackageReference Include="Mapster" Version="6.5.1" />
+    <PackageReference Include="Mapster.DependencyInjection" Version="1.0.0" />
+    <PackageReference Include="Microsoft.AspNetCore.Mvc.NewtonsoftJson" Version="3.1.9" />
+    <PackageReference Include="Newtonsoft.Json" Version="12.0.3" />
+    <PackageReference Include="NLog" Version="4.7.5" />
+    <PackageReference Include="NLog.Config" Version="4.7.5" />
+    <PackageReference Include="NLog.Extensions.Logging" Version="1.6.5" />
+    <PackageReference Include="NLog.Web.AspNetCore" Version="4.9.3" />
+    <PackageReference Include="Swashbuckle.AspNetCore" Version="5.6.3" />
+    <PackageReference Include="Swashbuckle.AspNetCore.Filters" Version="6.0.1" />
+  </ItemGroup>
+
+  <ItemGroup>
     <ProjectReference Include="..\CTrip.System.Common\CTrip.System.Common.csproj" />
     <ProjectReference Include="..\CTrip.System.Core\CTrip.System.Core.csproj" />
     <ProjectReference Include="..\CTrip.System.Interfaces\CTrip.System.Interfaces.csproj" />
     <ProjectReference Include="..\CTrip.System.Model\CTrip.System.Model.csproj" />
+    <ProjectReference Include="..\CTrip.System.Tasks\CTrip.System.Tasks.csproj" />
   </ItemGroup>
 
 

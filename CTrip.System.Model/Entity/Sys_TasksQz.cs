@@ -39,7 +39,7 @@ namespace CTrip.System.Model
            /// 默认 : 
            /// <summary>
            [Display(Name = "触发器类型（0、simple 1、cron）")]           
-           public int? TriggerType {get;set;}
+           public int TriggerType {get;set;}
 
            /// <summary>
            /// 描述 : 更新人编码 
@@ -63,7 +63,7 @@ namespace CTrip.System.Model
            /// 默认 : 
            /// <summary>
            [Display(Name = "执行间隔时间(单位:秒)")]           
-           public int? IntervalSecond {get;set;}
+           public int IntervalSecond {get;set;}
 
            /// <summary>
            /// 描述 : 更新人 
@@ -87,7 +87,7 @@ namespace CTrip.System.Model
            /// 默认 : 
            /// <summary>
            [Display(Name = "是否启动")]           
-           public byte? IsStart {get;set;}
+           public bool IsStart {get;set;}
 
            /// <summary>
            /// 描述 : 任务所在类 
@@ -127,7 +127,7 @@ namespace CTrip.System.Model
            /// 默认 : 
            /// <summary>
            [Display(Name = "执行次数")]           
-           public int? RunTimes {get;set;}
+           public int RunTimes {get;set;}
 
            /// <summary>
            /// 描述 : 最后更新时间 
