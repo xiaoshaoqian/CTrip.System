@@ -152,5 +152,15 @@ namespace CTrip.System.Hostd.Controllers.System
         {
             return ToResponse(_tokenManager.GetSessionInfo());
         }
+        [HttpGet]
+        public IActionResult GetDemo()
+        {
+            return ToResponse(new Sys_Role()
+            {
+                CreateID = "xiaoshaoqian",
+                CreateName = "肖绍谦",
+                CreateTime = DateTime.Now
+            });
+        }
     }
 }
