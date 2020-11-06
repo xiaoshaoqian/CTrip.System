@@ -1,0 +1,171 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>CTrip.System.Hostd</name>
+    </assembly>
+    <members>
+        <member name="M:CTrip.System.Hostd.Controllers.BaseController.ResolveUserMenuTree(System.Collections.Generic.List{CTrip.System.Model.Sys_Menu},System.String)">
+            <summary>
+            生成系统菜单树
+            </summary>
+            <param name="menus"></param>
+            <param name="parentId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:CTrip.System.Hostd.Controllers.BaseController.ResolveMenuTree(System.Collections.Generic.List{CTrip.System.Model.Sys_Menu},System.String)">
+            <summary>
+            生成  Router
+            </summary>
+            <param name="menus"></param>
+            <param name="parentId"></param>
+            <returns></returns>
+        </member>
+        <member name="F:CTrip.System.Hostd.Controllers.System.AuthController._tokenManager">
+            <summary>
+            会话管理接口
+            </summary>
+        </member>
+        <member name="F:CTrip.System.Hostd.Controllers.System.AuthController._logger">
+            <summary>
+            日志管理接口
+            </summary>
+        </member>
+        <member name="F:CTrip.System.Hostd.Controllers.System.AuthController._userService">
+            <summary>
+            用户服务接口
+            </summary>
+        </member>
+        <member name="F:CTrip.System.Hostd.Controllers.System.AuthController._userRelationService">
+            <summary>
+            用户关系接口
+            </summary>
+        </member>
+        <member name="M:CTrip.System.Hostd.Controllers.System.AuthController.Code">
+            <summary>
+            获取验证码
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:CTrip.System.Hostd.Controllers.System.AuthController.LoginMiniProgram(CTrip.System.Model.Dto.System.LoginMiniProgramDto)">
+            <summary>
+            微信小程序用户登录
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:CTrip.System.Hostd.Controllers.System.AuthController.LogOut">
+            <summary>
+            用户退出
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:CTrip.System.Hostd.Controllers.System.AuthController.GetUserInfo">
+            <summary>
+            用户信息获取
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="F:CTrip.System.Hostd.Extensions.TokenManager._memoryCache">
+            <summary>
+            缓存组件
+            </summary>
+        </member>
+        <member name="F:CTrip.System.Hostd.Extensions.TokenManager._onlineService">
+            <summary>
+            在线会话
+            </summary>
+        </member>
+        <member name="F:CTrip.System.Hostd.Extensions.TokenManager._usersService">
+            <summary>
+            用户接口
+            </summary>
+        </member>
+        <member name="F:CTrip.System.Hostd.Extensions.TokenManager._accessor">
+            <summary>
+            HTTP上下文
+            </summary>
+        </member>
+        <member name="M:CTrip.System.Hostd.Extensions.TokenManager.CreateSession(CTrip.System.Model.Sys_Users,CTrip.System.Model.SourceType,System.Int32)">
+            <summary>
+            创建 Session
+            </summary>
+        </member>
+        <member name="M:CTrip.System.Hostd.Extensions.TokenManager.UpdateSession(System.String)">
+            <summary>
+            更新Session
+            </summary>
+            <param name="userSession">用户Session</param>
+        </member>
+        <member name="M:CTrip.System.Hostd.Extensions.TokenManager.RefreshSession(System.String)">
+            <summary>
+            刷新用户所有Session信息
+            </summary>
+            <param name="userId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:CTrip.System.Hostd.Extensions.TokenManager.RemoveSession(System.String)">
+            <summary>
+            清除指定 Session
+            </summary>
+        </member>
+        <member name="M:CTrip.System.Hostd.Extensions.TokenManager.RemoveAllSession(System.String)">
+            <summary>
+            清除用户所有 Session
+            </summary>
+            <param name="userId"></param>
+        </member>
+        <member name="P:CTrip.System.Hostd.Extensions.TokenManager.GetSysToken">
+            <summary>
+            获取Session
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:CTrip.System.Hostd.Extensions.TokenManager.GetSessionInfo">
+            <summary>
+            当前登录用户信息
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:CTrip.System.Hostd.Extensions.TokenManager.IsAuthenticated">
+            <summary>
+            判断用户是否登录
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:CTrip.System.Hostd.Extensions.TokenManager.GetSessionItem``1(System.String)">
+            <summary>
+            获取 Session 内容
+            </summary>
+            <typeparam name="T"></typeparam>
+            <param name="key"></param>
+            <returns></returns>
+        </member>
+        <member name="M:CTrip.System.Hostd.Extensions.TokenManager.GetSessionItem``1(System.String,System.String)">
+            <summary>
+            获取 Session 内容
+            </summary>
+            <typeparam name="T"></typeparam>
+            <param name="session"></param>
+            <param name="key"></param>
+            <returns></returns>
+        </member>
+        <member name="M:CTrip.System.Hostd.Global.GlobalExceptions.WriteLog(System.String,System.Exception)">
+            <summary>
+            自定义返回格式
+            </summary>
+            <param name="throwMsg"></param>
+            <param name="ex"></param>
+            <returns></returns>
+        </member>
+        <member name="T:CTrip.System.Hostd.Middleware.RequestMiddleware">
+            <summary>
+            中间件
+            记录请求和响应数据
+            </summary>
+        </member>
+        <member name="F:CTrip.System.Hostd.Middleware.RequestMiddleware.logger">
+            <summary>
+            日志接口
+            </summary>
+        </member>
+    </members>
+</doc>

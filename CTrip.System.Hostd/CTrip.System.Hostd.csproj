@@ -1,7 +1,11 @@
-<Project Sdk="Microsoft.NET.Sdk.Web">
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
 
   <PropertyGroup>
     <TargetFramework>netcoreapp3.1</TargetFramework>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+    <DocumentationFile>D:\MyCode\CTrip.System\CTrip.System.Hostd\CTrip.System.Hostd.xml</DocumentationFile>
   </PropertyGroup>
 
   <ItemGroup>

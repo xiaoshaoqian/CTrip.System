@@ -65,7 +65,7 @@ namespace CTrip.System.Hostd.Middleware
                 eventInfo.Properties["Elapsed"] = _stopwatch.ElapsedMilliseconds;
                 eventInfo.Properties["RequestBody"] = requestContent;
 
-                logger.Trace(eventInfo);
+                //logger.Trace(eventInfo); 此方法非常耗时，待解决
             }
             else
             {
