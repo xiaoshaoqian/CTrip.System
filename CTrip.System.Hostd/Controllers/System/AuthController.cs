@@ -40,7 +40,7 @@ namespace CTrip.System.Hostd.Controllers.System
         /// </summary>
         private readonly ISysUserRelationService _userRelationService;
 
-        public AuthController(TokenManager tokenManager, ISysUsersService userService, ILogger<AuthController> logger,ISysUserRelationService userRelationService)
+        public AuthController(TokenManager tokenManager, ISysUsersService userService, ILogger<AuthController> logger, ISysUserRelationService userRelationService)
         {
             _tokenManager = tokenManager;
             _userService = userService;
@@ -80,7 +80,7 @@ namespace CTrip.System.Hostd.Controllers.System
             {
                 return ToResponse(StatusCodeType.Error, "输入验证码无效");
             }
-            var userInfo = _userService.GetFirst(o => o.UserID == parm.UserName.Trim());
+            var userInfo = _userService.GetFirst(o => o.UserName == parm.UserName.Trim() || o.Phone == parm.UserName.Trim());
             if (userInfo == null)
             {
                 return ToResponse(StatusCodeType.Error, "用户名或密码错误");
