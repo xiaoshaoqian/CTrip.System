@@ -64,6 +64,81 @@
             </summary>
             <returns></returns>
         </member>
+        <member name="T:CTrip.System.Hostd.Controllers.System.UsersController">
+            <summary>
+            用户管理
+            </summary>
+        </member>
+        <member name="F:CTrip.System.Hostd.Controllers.System.UsersController._logger">
+            <summary>
+            日志管理接口
+            </summary>
+        </member>
+        <member name="F:CTrip.System.Hostd.Controllers.System.UsersController._tokenManager">
+            <summary>
+            会话管理接口
+            </summary>
+        </member>
+        <member name="F:CTrip.System.Hostd.Controllers.System.UsersController._usersService">
+            <summary>
+            用户服务接口
+            </summary>
+        </member>
+        <member name="F:CTrip.System.Hostd.Controllers.System.UsersController._relationService">
+            <summary>
+            用户权限接口
+            </summary>
+        </member>
+        <member name="M:CTrip.System.Hostd.Controllers.System.UsersController.Query(CTrip.System.Model.Dto.System.UsersQueryDto)">
+            <summary>
+            查询用户列表
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:CTrip.System.Hostd.Controllers.System.UsersController.Get(System.String)">
+            <summary>
+            查询用户
+            </summary>
+            <param name="id">编码</param>
+            <returns></returns>
+        </member>
+        <member name="M:CTrip.System.Hostd.Controllers.System.UsersController.Register(CTrip.System.Model.Dto.System.UsersRegisterDto)">
+            <summary>
+            注册用户
+            </summary>
+            <param name="parm"></param>
+            <returns></returns>
+        </member>
+        <member name="M:CTrip.System.Hostd.Controllers.System.UsersController.Create(CTrip.System.Model.Dto.System.UsersCreateDto)">
+            <summary>
+            添加用户
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:CTrip.System.Hostd.Controllers.System.UsersController.Update(CTrip.System.Model.Dto.System.UsersUpdateDto)">
+            <summary>
+            更新用户
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:CTrip.System.Hostd.Controllers.System.UsersController.Delete(CTrip.System.Model.Dto.System.UsersDeleteDto)">
+            <summary>
+            删除用户
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:CTrip.System.Hostd.Controllers.System.UsersController.Enable(CTrip.System.Model.Dto.System.UsersEnableDto)">
+            <summary>
+            批量禁用启用
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:CTrip.System.Hostd.Controllers.System.UsersController.ResetPassword(CTrip.System.Model.Dto.System.UsersResetPasswordDto)">
+            <summary>
+            重置密码
+            </summary>
+            <returns></returns>
+        </member>
         <member name="F:CTrip.System.Hostd.Extensions.TokenManager._memoryCache">
             <summary>
             缓存组件

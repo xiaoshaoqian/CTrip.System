@@ -15,8 +15,8 @@ namespace CTrip.System.Model.Dto.System
         /// 空值 : True
         /// 默认 : 
         /// <summary>
-        [Display(Name = "用户昵称")]
-        public string NickName { get; set; }
+        [Display(Name = "用户名")]
+        public string Name { get; set; }
 
         /// <summary>
         /// 描述 : 邮箱 

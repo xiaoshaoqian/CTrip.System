@@ -30,8 +30,8 @@ namespace CTrip.System.Model
            /// 空值 : True
            /// 默认 : 
            /// <summary>
-           [Display(Name = "用户昵称")]           
-           public string NickName {get;set;}
+           [Display(Name = "用户名")]           
+           public string Name {get;set;}
 
            /// <summary>
            /// 描述 : 用户所在省份 
@@ -87,7 +87,7 @@ namespace CTrip.System.Model
            /// 默认 : 
            /// <summary>
            [Display(Name = "更新人")]           
-           public DateTime? UpdateName {get;set;}
+           public string UpdateName {get;set;}
 
            /// <summary>
            /// 描述 : 密码 

@@ -47,7 +47,7 @@ namespace CTrip.System.Model
            /// 默认 : 
            /// <summary>
            [Display(Name = "更新人")]           
-           public DateTime? UpdateName {get;set;}
+           public string UpdateName {get;set;}
 
            /// <summary>
            /// 描述 : 路由地址 

@@ -68,7 +68,7 @@ namespace CTrip.System.Hostd.Extensions
             {
                 UserID = userInfo.UserID,
                 UserName = userInfo.UserName,
-                NickName = userInfo.NickName,
+                Name = userInfo.Name,
                 Email = userInfo.Email,
                 Sex = userInfo.Sex,
                 AvatarUrl = userInfo.AvatarUrl,
@@ -183,7 +183,7 @@ namespace CTrip.System.Hostd.Extensions
                     {
                         UserID = userInfo.UserID,
                         UserName = userInfo.UserName,
-                        NickName = userInfo.NickName,
+                        Name = userInfo.Name,
                         Email = userInfo.Email,
                         Sex = userInfo.Sex,
                         AvatarUrl = userInfo.AvatarUrl,

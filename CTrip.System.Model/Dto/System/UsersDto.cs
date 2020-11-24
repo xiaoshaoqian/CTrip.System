@@ -23,6 +23,70 @@ namespace CTrip.System.Model.Dto.System
     }
 
     /// <summary>
+    /// 添加注册用户
+    /// </summary>
+    public class UsersRegisterDto
+    {
+        /// <summary>
+        /// 描述 : 用户账号 
+        /// 空值 : False
+        /// 默认 : 
+        /// <summary>
+        [Display(Name = "用户ID")]
+        public string UserID { get; set; }
+
+        /// <summary>
+        /// 描述 : 用户名称 
+        /// 空值 : False
+        /// 默认 : 
+        /// <summary>
+        [Display(Name = "用户名")]
+        [Required(ErrorMessage = "用户名称不能为空")]
+        public string UserName { get; set; }
+
+        /// <summary>
+        /// 描述 : 用户昵称 
+        /// 空值 : True
+        /// 默认 : 
+        /// <summary>
+        [Display(Name = "用户名字")]
+        public string Name { get; set; }
+
+        /// <summary>
+        /// 描述 : 密码 
+        /// 空值 : False
+        /// 默认 : 
+        /// <summary>
+        [Display(Name = "密码")]
+        [Required(ErrorMessage = "用户密码不能为空")]
+        public string Password { get; set; }
+
+        /// <summary>
+        /// 描述 : 手机号码 
+        /// 空值 : True
+        /// 默认 : 
+        /// <summary>
+        [Display(Name = "手机号码")]
+        [Required(ErrorMessage = "手机号码不能为空")]
+        public string Phone { get; set; }
+
+        /// <summary>
+        /// 验证码
+        /// </summary>
+        [Display(Name = "验证码")]
+        [Required(ErrorMessage = "验证码不能为空")]
+        public string Code { get; set; }
+
+        /// <summary>
+        /// 验证码ID
+        /// </summary>
+        [Display(Name = "验证码ID")]
+        [Required(ErrorMessage = "验证码ID不能为空")]
+        public string Uuid { get; set; }
+
+    }
+
+    /// <summary>
     /// 添加用户
     /// </summary>
     public class UsersCreateDto
@@ -50,8 +114,8 @@ namespace CTrip.System.Model.Dto.System
         /// 空值 : True
         /// 默认 : 
         /// <summary>
-        [Display(Name = "用户昵称")]
-        public string NickName { get; set; }
+        [Display(Name = "用户名字")]
+        public string Name { get; set; }
 
         /// <summary>
         /// 描述 : 邮箱 
@@ -101,6 +165,7 @@ namespace CTrip.System.Model.Dto.System
         /// 默认 : 
         /// <summary>
         [Display(Name = "手机号码")]
+        [Required(ErrorMessage = "手机号码不能为空")]
         public string Phone { get; set; }
 
         /// <summary>
@@ -228,8 +293,8 @@ namespace CTrip.System.Model.Dto.System
         /// 空值 : True
         /// 默认 : 
         /// <summary>
-        [Display(Name = "用户昵称")]
-        public string NickName { get; set; }
+        [Display(Name = "用户名字")]
+        public string Name { get; set; }
 
         /// <summary>
         /// 描述 : 邮箱 
