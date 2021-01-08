@@ -16,6 +16,7 @@ namespace CTrip.System.Interfaces
     {
 
         #region CustomInterface 
+        List<Sys_Users> GetRoleUsers(string roleId);
         #endregion
 
     }

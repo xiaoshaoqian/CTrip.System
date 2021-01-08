@@ -11,7 +11,7 @@
  Target Server Version : 80017
  File Encoding         : 65001
 
- Date: 24/11/2020 17:30:28
+ Date: 08/01/2021 15:29:48
 */
 
 SET NAMES utf8mb4;
@@ -243,12 +243,13 @@ CREATE TABLE `Sys_Users`  (
   `CreateName` varchar(255) CHARACTER SET utf8 COLLATE utf8_general_ci NULL DEFAULT NULL COMMENT '创建人',
   `UpdateID` varchar(255) CHARACTER SET utf8 COLLATE utf8_general_ci NULL DEFAULT NULL COMMENT '更新人编码',
   `UpdateName` varchar(255) CHARACTER SET utf8 COLLATE utf8_general_ci NULL DEFAULT NULL COMMENT '更新人',
+  `NickName` varchar(255) CHARACTER SET utf8 COLLATE utf8_general_ci NULL DEFAULT NULL COMMENT '昵称',
   PRIMARY KEY (`UserID`) USING BTREE
 ) ENGINE = InnoDB CHARACTER SET = utf8 COLLATE = utf8_general_ci ROW_FORMAT = Dynamic;
 
 -- ----------------------------
 -- Records of Sys_Users
 -- ----------------------------
-INSERT INTO `Sys_Users` VALUES ('705feb43-9b27-4ae0-9a25-5c4ec81c43d2', 'xiaoshaoqian', '肖绍谦', NULL, 'BE49471BD49DDF385FDF035EE61905C8', NULL, NULL, NULL, '18627827716', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, 0, 0, NULL, NULL, NULL, NULL, NULL, NULL);
+INSERT INTO `Sys_Users` VALUES ('705feb43-9b27-4ae0-9a25-5c4ec81c43d2', 'xiaoshaoqian', '肖绍谦', NULL, 'BE49471BD49DDF385FDF035EE61905C8', NULL, NULL, NULL, '18627827716', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, 0, 0, NULL, NULL, NULL, NULL, NULL, NULL, NULL);
 
 SET FOREIGN_KEY_CHECKS = 1;

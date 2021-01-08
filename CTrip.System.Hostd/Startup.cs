@@ -28,18 +28,35 @@ using CTrip.System.Hostd.Middleware;
 
 namespace CTrip.System.Hostd
 {
+    /// <summary>
+    /// 
+    /// </summary>
     public class Startup
     {
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="configuration"></param>
+        /// <param name="env"></param>
         public Startup(IConfiguration configuration, IWebHostEnvironment env)
         {
             Configuration = configuration;
             Env = env;
         }
-
+        /// <summary>
+        /// 
+        /// </summary>
         public IConfiguration Configuration { get; }
+        /// <summary>
+        /// 
+        /// </summary>
         public IWebHostEnvironment Env { get; }
 
         // This method gets called by the runtime. Use this method to add services to the container.
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="services"></param>
         public void ConfigureServices(IServiceCollection services)
         {
             #region 跨域设置
@@ -146,6 +163,11 @@ namespace CTrip.System.Hostd
             #endregion
         }
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="app"></param>
+        /// <param name="env"></param>
         public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
         {
             #region 开发错误提示
@@ -197,6 +219,10 @@ namespace CTrip.System.Hostd
         }
 
         #region 自动注入服务
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="builder"></param>
         public void ConfigureContainer(ContainerBuilder builder)
         {
             var assemblysServices = Assembly.Load("CTrip.System.Interfaces");

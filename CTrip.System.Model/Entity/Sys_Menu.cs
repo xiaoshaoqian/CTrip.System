@@ -39,7 +39,7 @@ namespace CTrip.System.Model
            /// 默认 : 
            /// <summary>
            [Display(Name = "是否外链")]           
-           public byte? isFrame {get;set;}
+           public bool isFrame {get;set;}
 
            /// <summary>
            /// 描述 : 更新人 

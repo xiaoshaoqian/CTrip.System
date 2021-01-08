@@ -15,6 +15,13 @@ namespace CTrip.System.Model.Dto.System
         /// 空值 : True
         /// 默认 : 
         /// <summary>
+        [Display(Name = "用户昵称")]
+        public string NickName { get; set; }
+        /// <summary>
+        /// 描述 : 用户昵称 
+        /// 空值 : True
+        /// 默认 : 
+        /// <summary>
         [Display(Name = "用户名")]
         public string Name { get; set; }
 

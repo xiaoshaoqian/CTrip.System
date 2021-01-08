@@ -17,6 +17,18 @@ namespace CTrip.System.Interfaces
     {
 
         #region CustomInterface 
+        /// <summary>
+        /// 获取具有角色的用户列表
+        /// </summary>
+        /// <param name="roleId">角色Id</param>
+        /// <returns></returns>
+        public List<Sys_Users> GetRoleUsers(string roleId)
+        {
+            return Db.Queryable<Sys_UserRole, Sys_Users>
+                ((a, b) => new object[] { JoinType.Inner, a.UserID == b.UserID })
+                .Where((a, b) => a.RoleID == roleId)
+                .Select((a, b) => b).ToList();
+        }
         #endregion
 
     }
