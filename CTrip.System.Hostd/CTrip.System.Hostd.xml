@@ -20,6 +20,11 @@
             <param name="parentId"></param>
             <returns></returns>
         </member>
+        <member name="T:CTrip.System.Hostd.Controllers.System.AuthController">
+            <summary>
+            
+            </summary>
+        </member>
         <member name="F:CTrip.System.Hostd.Controllers.System.AuthController._tokenManager">
             <summary>
             会话管理接口
@@ -40,10 +45,26 @@
             用户关系接口
             </summary>
         </member>
+        <member name="M:CTrip.System.Hostd.Controllers.System.AuthController.#ctor(CTrip.System.Hostd.Extensions.TokenManager,CTrip.System.Interfaces.ISysUsersService,Microsoft.Extensions.Logging.ILogger{CTrip.System.Hostd.Controllers.System.AuthController},CTrip.System.Interfaces.ISysUserRelationService)">
+            <summary>
+            
+            </summary>
+            <param name="tokenManager"></param>
+            <param name="userService"></param>
+            <param name="logger"></param>
+            <param name="userRelationService"></param>
+        </member>
         <member name="M:CTrip.System.Hostd.Controllers.System.AuthController.Code">
             <summary>
             获取验证码
             </summary>
+            <returns></returns>
+        </member>
+        <member name="M:CTrip.System.Hostd.Controllers.System.AuthController.Login(CTrip.System.Model.Dto.System.LoginDto)">
+            <summary>
+            登录
+            </summary>
+            <param name="parm"></param>
             <returns></returns>
         </member>
         <member name="M:CTrip.System.Hostd.Controllers.System.AuthController.LoginMiniProgram(CTrip.System.Model.Dto.System.LoginMiniProgramDto)">
